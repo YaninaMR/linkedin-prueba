@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+</head>
+<body>
+<section>
+ <div class="page container">
+  <nav class="title">
+    <h5>Obten tus datos con Linkedin JS API</h5>
+  </nav>
+    
+
+    <ul id="js-messages">
+        <li></li>
+    </ul>
+    <script type="IN/Login"
+            data-onAuth="Linkedin.onAuthCallback"
+            data-onLogout="Linkedin.onLogoutCallback"
+    >      
+        <img src="http://dummyimage.com/1x1/F.gif" onload=" Linkedin.userData({              id        : '<?js= id ?>', firstName : '<?js= firstName ?>', lastName  : '<?js= lastName ?>', headline  : '<?js= headline ?>', pictureUrl: '<?js= pictureUrl ?>'    }); " /> </script>
+</div>
+</section> 
+   
+<script type="text/javascript" src="http://platform.linkedin.com/in.js">
+  api_key: 78yg3d7hvenydb
+  authorize: true
+</script>
+ 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="js/applink.js"></script>
+  
+</body>
+</html>
+
+
+      
